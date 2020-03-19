@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/* 清除浮动 */
+.clear:after {
+  /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+a {
+  text-decoration: none; }
+
+@charset "UTF-8";
+ul, li, ol {
+  list-style: none; }
+
+.ali {
+  float: left;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* &:伪类 */ }
+  .ali:hover {
+    text-decoration: underline;
+    color: blue;
+    transition: all 0.1s; }
+
+#div1{
+	background-color: #fff;
+	font-size: 30px;
+	padding: 30px 0;
+}
+#div2{
+	background-color:#eee;
+	font-size: 20px;
+}
+#div1{
+	color: #444;
+}
+#div2{
+	color: #fff;
+}
+.index1 {
+  color: yellow;
+}
+.index2 {
+  color: green;
+}
+
+@charset "UTF-8";
+/* 定义变量与值 */
+/* 带入scss */
+a {
+  text-decoration: none; }
+
+#p1 span {
+  /* 局部作用域 */
+  color: #000; }
+
+#p1 small {
+  color: #f00;
+  font-size: 12px; }
+  #p1 small i {
+    background-color: #eee; }
+
+/* Sass @mixin 与 @include */
+/* 
+定义一个混入
+混入(mixin)通过 @mixin 指令来定义。 @mixin name { property: value; property: value; ... }
+*/
+/* nav */
+.navBox {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #eee; }

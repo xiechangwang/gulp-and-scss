@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* 定义变量与值 */
+/* 带入scss */
+a {
+  text-decoration: none; }
+
+#p1 span {
+  /* 局部作用域 */
+  color: #000; }
+
+#p1 small {
+  color: #f00;
+  font-size: 12px; }
+  #p1 small i {
+    background-color: #eee; }
+
+/* Sass @mixin 与 @include */
+/* 
+定义一个混入
+混入(mixin)通过 @mixin 指令来定义。 @mixin name { property: value; property: value; ... }
+*/
+/* nav */
+.navBox {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #eee; }

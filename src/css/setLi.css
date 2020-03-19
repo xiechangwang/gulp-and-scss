@@ -1,0 +1,13 @@
+@charset "UTF-8";
+ul, li, ol {
+  list-style: none; }
+
+.ali {
+  float: left;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* &:伪类 */ }
+  .ali:hover {
+    text-decoration: underline;
+    color: blue;
+    transition: all 0.1s; }

@@ -1,0 +1,37 @@
+/* 定义变量与值 */
+$fontColor:#f00;
+$fontSize:12px;
+$bgColor:#eee !global;  // 全局作用域
+
+/* 带入scss */
+@import "colors";
+#p1{
+	span{
+		/* 局部作用域 */
+		$fontColor:#000;
+		color:$fontColor;
+	};
+	small{
+		color: $fontColor;
+		font-size: $fontSize;
+		i{
+			background-color: $bgColor;
+		}
+	};	
+}
+
+/* Sass @mixin 与 @include */
+/* 
+定义一个混入
+混入(mixin)通过 @mixin 指令来定义。 @mixin name { property: value; property: value; ... }
+*/
+@mixin important-box {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #eee;	
+}
+/* nav */
+.navBox{
+	@include important-box;
+}	

@@ -1,0 +1,15 @@
+$hoverColor:blue;
+ul,li,ol{
+	list-style: none;
+}
+.ali{
+	float: left;
+	padding: 5px 10px;
+	cursor:pointer;
+	/* &:伪类 */
+	&:hover{	
+		text-decoration: underline;
+		color: $hoverColor;
+		transition: all 0.1s;
+	}
+}
