@@ -90,7 +90,7 @@ gulp.task('js',()=>{
 /*watch监听，不需要在cmd中重复执行gulp xxx*/
 gulp.task('watch',()=>{
 	gulp.watch('./compont/*.html',gulp.series('template'))
-	gulp.watch('./**.*',gulp.series('bable'));/*html有修改时监听*/
+	gulp.watch('./src/js/*.js',gulp.series('bable'));/*bable有修改时监听*/
 	gulp.watch('./*.html',gulp.series('html'));/*html有修改时监听*/
 	gulp.watch('./src/less/*.less',gulp.series('less'));/*less有修改时监听*/
 	gulp.watch('./src/sass/*.scss',gulp.series('sass'));/*sass有修改时监听*/
